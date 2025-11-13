@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D.P Jithin | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body { scroll-behavior: smooth; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
+    section { padding: 100px 0; }
+
+    .navbar { transition: background-color 0.4s, box-shadow 0.4s; }
+    .navbar.scrolled { background-color: rgba(255,255,255,0.95); box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+    .navbar .nav-link { color: #fff; font-weight: 500; margin-right: 15px; transition: color 0.3s; }
+    .navbar.scrolled .nav-link { color: #2575fc; }
+
+    .hero-section {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-section h1 { font-size: 3rem; margin-top: 20px; }
+    .hero-section p.lead { font-size: 1.5rem; margin-top: 15px; }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+    }
+    .profile-photo:hover { transform: scale(1.05); }
+
+    .section-title { text-align: center; margin-bottom: 60px; font-weight: 700; font-size: 2.5rem; color: #2575fc; position: relative; }
+    .section-title::after { content: ''; display: block; width: 80px; height: 4px; background-color: #2575fc; margin: 10px auto 0 auto; border-radius: 2px; }
+
+    .contact-section form input, .contact-section form textarea { margin-bottom: 15px; border-radius: 8px; border: 1px solid #ced4da; }
+    .contact-section button { border-radius: 8px; transition: all 0.3s; }
+    .contact-section button:hover { background-color: #6a11cb; border-color: #6a11cb; }
+
+    .education-card { margin-bottom: 20px; }
+    .education-card h5 { font-weight: 600; color: #2575fc; }
+    .card h5 { font-weight: 600; }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#hero">D.P Jithin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="hero" class="hero-section">
+  <input type="file" id="profileUpload" accept="image/*" style="display:none">
+  <img src="profile.jpg" alt="Profile Photo" class="profile-photo animate__animated animate__zoomIn" id="profileImage">
+
+  <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Hello, I am D.P Jithin</h1>
+  <p class="lead animate__animated animate__fadeInUp animate__delay-2s">Data Engineer | Web Developer</p>
+</section>
+
+<!-- ABOUT ME SECTION -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title animate__animated animate__fadeInUp">About Me</h2>
+    <p class="animate__animated animate__fadeInUp animate__delay-1s">
+      I am <strong>D.P Jithin</strong>, a final year Data Science student with a strong passion for extracting actionable insights from complex datasets and developing data-driven solutions. I have a strong foundation in HTML, CSS, JavaScript, Java, and Python, with practical experience in building web applications and data analysis projects. My goal is to become a professional Data Analyst by applying analytical thinking, machine learning techniques, and visualization skills to help businesses make informed decisions.
+    </p>
+    <p class="animate__animated animate__fadeInUp animate__delay-2s">
+      I am highly motivated to gain real-world experience through internships in the field of data science and analytics. I am always eager to learn and apply new technologies, develop problem-solving strategies, and collaborate effectively in team environments. I aspire to contribute to innovative projects that address industry challenges and help organizations enhance their business processes through data intelligence.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS & EXPERTISE SECTION -->
+<section id="skills" class="bg-light">
+  <div class="container">
+    <h2 class="section-title animate__animated animate__fadeInUp">Skills & Expertise</h2>
+    <div class="row text-center mt-5">
+      <!-- Frontend Development -->
+      <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+        <div class="card shadow-sm p-4 h-100">
+          <h5 class="card-title text-primary">Frontend Development</h5>
+          <p class="card-text">Expert in HTML, CSS, JavaScript, creating responsive and interactive web pages, and implementing modern UI features.</p>
+        </div>
+      </div>
+      <!-- Programming Languages -->
+      <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="card shadow-sm p-4 h-100">
+          <h5 class="card-title text-primary">Programming</h5>
+          <p class="card-text">Good knowledge of Java and Python (basics), applying OOP concepts, and developing simple algorithms and scripts for projects.</p>
+        </div>
+      </div>
+      <!-- UI/UX & Design -->
+      <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="card shadow-sm p-4 h-100">
+          <h5 class="card-title text-primary">UI/UX & Design</h5>
+          <p class="card-text">Experienced in UI/UX design, prototyping with Figma, and creating intuitive and user-friendly interfaces.</p>
+        </div>
+      </div>
+      <!-- Databases -->
+      <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-3s">
+        <div class="card shadow-sm p-4 h-100">
+          <h5 class="card-title text-primary">Databases</h5>
+          <p class="card-text">Proficient with MongoDB, writing queries, managing collections, and handling data effectively for projects.</p>
+        </div>
+      </div>
+      <!-- Communication -->
+      <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-4s">
+        <div class="card shadow-sm p-4 h-100">
+          <h5 class="card-title text-primary">Communication</h5>
+          <p class="card-text">Strong communication skills for teamwork, presentations, and explaining technical concepts clearly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION SECTION -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-title animate__animated animate__fadeInUp">Education</h2>
+
+    <!-- B.E -->
+    <div class="card shadow-sm p-4 education-card">
+      <h5>Bachelor of Engineering in Computer Science (Data Science)</h5>
+      <p><strong>Institution:</strong> Vivekananda College of Engineering and Technology, Puttur</p>
+      <ul>
+        <li><strong>CGPA:</strong> 6.14 / 10</li>
+        <li><strong>Relevant Courses:</strong> Data Structure, Operating System, Computer Networks, DBMS, AI & ML, UI & UX</li>
+      </ul>
+    </div>
+
+    <!-- Higher Secondary -->
+    <div class="card shadow-sm p-4 education-card">
+      <h5>Higher Secondary Education (PUC)</h5>
+      <p><strong>Institution:</strong> SDM PU College, Ujire</p>
+      <ul>
+        <li><strong>Percentage:</strong> 63%</li>
+        <li><strong>Courses:</strong> Physics, Chemistry, Mathematics, English</li>
+      </ul>
+    </div>
+
+    <!-- Secondary -->
+    <div class="card shadow-sm p-4 education-card">
+      <h5>Secondary Education (10th)</h5>
+      <p><strong>Institution:</strong> K.S Gowda, Ninthikallu</p>
+      <ul>
+        <li><strong>Percentage:</strong> 77%</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="bg-light">
+  <div class="container">
+    <h2 class="section-title animate__animated animate__fadeInUp">My Projects</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm p-3 animate__animated animate__fadeInUp">
+          <div class="card-body">
+            <h5 class="card-title">Resume Analyzer (Mini Project)</h5>
+            <p class="card-text">Analyzes the uploaded resume and provides actionable suggestions to improve key skills, structure, and content to improve chances of selection by companies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm p-3 animate__animated animate__fadeInUp">
+          <div class="card-body">
+            <h5 class="card-title">YouTube Watch History Analyzer & Recommendation Modifier</h5>
+            <p class="card-text">Accesses YouTube watch history and recommends videos to improve skills based on previously watched content and interests using data analysis techniques.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="bg-light contact-section">
+  <div class="container">
+    <h2 class="section-title animate__animated animate__fadeInUp">Contact Me</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="contactForm">
+          <input type="text" name="user_name" class="form-control" placeholder="Your Name" required>
+          <input type="email" name="user_email" class="form-control" placeholder="Your Email" required>
+          <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+          <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h5>Address</h5>
+        <p>VCET, Karnataka, India</p>
+        <h5>Email</h5>
+        <p>jithindeva12@gmail.com</p>
+        <h5>Mobile</h5>
+        <p>+91 98765 43210</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+<script>
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) navbar.classList.add('scrolled');
+    else navbar.classList.remove('scrolled');
+  });
+
+  const profileImage = document.getElementById('profileImage');
+  const profileUpload = document.getElementById('profileUpload');
+  const savedImage = localStorage.getItem('profileImage');
+  if (savedImage) profileImage.src = savedImage;
+
+  profileImage.addEventListener('click', () => profileUpload.click());
+  profileUpload.addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const imageData = e.target.result;
+        profileImage.src = imageData;
+        localStorage.setItem('profileImage', imageData);
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+
+  emailjs.init('YOUR_PUBLIC_API_KEY');
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    .then(() => { alert('✅ Your message has been sent successfully!'); this.reset(); },
+          (error) => { console.error('❌ EmailJS error:', error); alert('⚠️ Failed to send message.'); });
+  });
+</script>
+
+</body>
+</html>
